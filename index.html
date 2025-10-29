@@ -2,60 +2,69 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>My Simple Shop</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Simple Shop</title>
 <style>
-  body {
-    font-family: Arial, sans-serif;
+  /* Remove default margin/padding so content starts at top */
+  html, body {
     margin: 0;
     padding: 0;
+    font-family: Arial, sans-serif;
     background: #f9f9f9;
     text-align: center;
   }
+  /* Header with logo at very top */
   header {
-    padding: 10px;
+    padding: 10px 0;
+    background: #fff;
   }
   img.logo {
     max-width: 150px;
+    display: block;
+    margin: 0 auto;
   }
+  /* Product card styling */
   .product {
-    margin: 20px auto;
-    max-width: 300px;
     background: #fff;
+    max-width: 300px;
+    margin: 20px auto;
+    padding: 10px;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    padding: 10px;
   }
-  img {
-    max-width: 100%;
+  .product img {
+    width: 100%;
     height: auto;
     border-radius: 4px;
   }
-  h2 {
-    margin: 10px 0 5px 0;
+  .product h2 {
+    margin: 10px 0 5px;
+  }
+  .product p {
+    margin: 0;
   }
 </style>
 </head>
 <body>
 
 <header>
-  <img src="images/shop.png" class="logo" alt="Shop Logo"/>
+  <img src="shop.png" class="logo" alt="Shop Logo" />
 </header>
 
 <div class="product">
-  <img src="images/drinks.jpeg" alt="Drinks"/>
+  <img src="drinks.jpeg" alt="Drinks" />
   <h2>Drinks</h2>
   <p>Price: 50 bread</p>
 </div>
 
 <div class="product">
-  <img src="images/candy.jpg" alt="Candy"/>
+  <img src="candy.jpg" alt="Candy" />
   <h2>Candy</h2>
   <p>Price: 40 bread</p>
 </div>
 
 <div class="product">
-  <img src="images/chips.jpg" alt="Chips"/>
+  <img src="chips.jpg" alt="Chips" />
   <h2>Chips</h2>
   <p>Price: 50 bread</p>
 </div>
